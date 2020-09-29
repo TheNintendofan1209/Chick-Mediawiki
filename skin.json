@@ -1,0 +1,85 @@
+{
+	"name": "Chick",
+	"version": "1.0",
+	"author": "Timwi and Mike9012",
+	"url": "https://github.com/TheNintendofan1209/Chick-Mediawiki",
+	"descriptionmsg": "chick-desc",
+	"namemsg": "skinname-chick",
+	"license-name": "GPL-2.0-or-later",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"ValidSkinNames": {
+		"chick": {
+			"class": "SkinChick",
+			"args": [ {
+				"name": "chick",
+				"responsive": true,
+				"templateDirectory": "skins/Chick/templates",
+				"styles": [
+					"skins.chick"
+				],
+				"messages": [
+					"sitetitle",
+					"search",
+					"tagline",
+					"navigation-heading"
+				],
+				"scripts": [
+					"skins.chick.js"
+				]
+			} ]
+		}
+	},
+	"MessagesDirs": {
+		"Chick": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.chick": {
+			"class": "ResourceLoaderSkinModule",
+			"features": [
+				"normalize",
+				"elements",
+				"content",
+				"interface",
+				"logo"
+			],
+			"styles": {
+				"resources/screen-common.less": {
+					"media": "screen"
+				},
+				"resources/screen-desktop.less": {
+					"media": "screen and (min-width: 751px)"
+				},
+				"resources/screen-mobile.less": {
+					"media": "screen and (max-width: 750px)"
+				},
+				"resources/print.css": {
+					"media": "print"
+				}
+			}
+		},
+		"skins.chick.js": {
+			"scripts": [
+				"resources/main.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Chick"
+	},
+	"ResourceModuleSkinStyles": {
+		"chick": {
+			"+ext.echo.styles.badge": "resources/extensions/echo.styles.badge.less"
+		}
+	},
+	"AutoloadClasses": {
+		"SkinChick": "includes/SkinChick.php",
+		"ChickTemplate": "includes/ChickTemplate.php"
+	},
+	"manifest_version": 1
+}
