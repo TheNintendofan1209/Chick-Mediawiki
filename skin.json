@@ -8,29 +8,10 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.29.0"
 	},
 	"ValidSkinNames": {
-		"chick": {
-			"class": "SkinChick",
-			"args": [ {
-				"name": "chick",
-				"responsive": true,
-				"templateDirectory": "skins/Chick/templates",
-				"styles": [
-					"skins.chick"
-				],
-				"messages": [
-					"sitetitle",
-					"search",
-					"tagline",
-					"navigation-heading"
-				],
-				"scripts": [
-					"skins.chick.js"
-				]
-			} ]
-		}
+		"chick": "Chick"
 	},
 	"MessagesDirs": {
 		"Chick": [
@@ -40,14 +21,10 @@
 	"ResourceModules": {
 		"skins.chick": {
 			"class": "ResourceLoaderSkinModule",
-			"features": [
-				"normalize",
-				"elements",
-				"content",
-				"interface",
-				"logo"
-			],
 			"styles": {
+				"resources/libraries/normalise.css": {
+					"media": "screen"
+				},
 				"resources/screen-common.less": {
 					"media": "screen"
 				},
