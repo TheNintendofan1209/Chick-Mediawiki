@@ -1,1 +1,1 @@
-/* JavaScript for the Chick skin */
+/* JavaScript for the Tunic skin */

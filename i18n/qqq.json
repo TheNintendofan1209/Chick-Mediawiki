@@ -1,7 +1,7 @@
 {
 	"@metadata": {
-		"authors": [ "Timwi and Mike9012" ]
+		"authors": [ "Mike9012" ]
 	},
 	"skinname-chick": "{{optional}}",
-	"chick-desc": "{{desc|what=skin|name=Chick|url=https://www.mediawiki.org/wiki/Skin:Chick}}"
+	"chick-desc": "{{desc|what=skin|name=Chick|url=https://github.com/TheNintendofan1209/Chick-Mediawiki}}"
 }
